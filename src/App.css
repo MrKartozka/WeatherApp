@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-image: url("/public/background.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.small-container {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(66, 195, 195, 0.4);
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search button {
+  margin-left: -60px;
+}
+
+.searchbox {
+  display: flex;
+}
+
+.namesearch {
+  padding-left: 70px;
+}
+
+.searchbox input {
+  border: none;
+  outline: 0;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: black;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.searchbox button {
+  border: none;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.searchbox button img {
+  width: 15px;
+  text-align: center;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.winfo {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.winfo .icon {
+  margin-top: 20px;
+  width: 170px;
+}
+
+.winfo h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.winfo h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -40px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 50px;
+}
+
+.details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.details .col img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 27px;
+}
+
+.humidity p,
+.wind p {
+  margin: 0px;
+}
+
+.error {
+  color: rgb(235, 169, 169);
+  text-align: left;
+  margin-left: 10px;
+}
+
+.weather-footer-container {
+  background-color: rgba(255, 255, 255, 0.575);
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  margin-left: 40px;
+}
+
+.weather-footer__wind img {
+  width: 40%;
+}
+
+.weather-footer__wind h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.weather-footer__humidity img {
+  width: 40%;
+}
+
+.weather-footer__main {
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 40px;
+}
+
+.weather-footer__main h1 {
+  text-align: center;
+}
+
+.weather-footer__main h2 {
+  text-align: center;
+}
+
+.weather-footer__main img {
+  text-align: center;
+  width: 90%;
+}
+
+.weather-footer {
+  display: flex;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 40px;
+}
+
+.weather-header__current_weather {
+  margin-left: 20px;
+}
+
+.weather-header-current-date {
+  text-align: right;
+  padding-left: 70px;
 }
